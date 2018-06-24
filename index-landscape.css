@@ -1,0 +1,36 @@
+.post > .information {
+	display: flex;
+	
+	position: relative;
+}
+
+.post:nth-of-type(n+2):before {
+	content: '';
+	
+	display: block;
+	
+	margin: 1rem 0;
+	height: 1px;
+	
+	background: lightgray;
+}
+
+.post > .information > .title {
+	font-size: xx-large;
+}
+
+.post > .information > .date:before {
+	content: 'Puslished at: ';
+}
+
+.post > .information > .date {
+	position: absolute;
+	
+	right: 0;
+	
+	color: #888888;
+}
+
+.post > .description {
+	color: #555555;
+}

@@ -1,0 +1,2 @@
+@import url("index-landscape.css") only screen and (orientation: landscape);
+@import url("index-portrait.css") only screen and (orientation: portrait);

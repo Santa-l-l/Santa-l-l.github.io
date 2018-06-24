@@ -1,0 +1,99 @@
+aside {
+	position: relative;
+	
+	padding: 0 32px;
+	height: 192px;
+	
+	font-size: 64px;
+	line-height: 192px;
+	
+	background-color: #222222;
+}
+
+#burger, #burger:not(:checked) + label + a + ul { display: none; }
+
+#burger + label + a + ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	position: absolute;
+	
+	right: 0;
+	top: 100%;
+	margin-top: 16pt;
+	padding: 8pt 0;
+	
+	border-radius: 16pt;
+	
+	text-align: center;
+	
+	color: white;
+	background-color: #333333;
+	
+	z-index: 1;
+}
+
+#burger + label + a + ul:before {
+	content: "";
+	
+	display: block;
+	
+	position: absolute;
+	
+	top: -16pt;
+	right: 32pt;
+	height: 0;
+	
+	border: 16pt solid transparent;
+	border-top: none;
+	border-bottom: 16pt solid #333333;
+}
+
+#burger + label + a + ul > li { list-style: none; }
+
+#burger + label + a + ul > li > a {
+	display: inline-block;
+	
+	padding: 0 64pt;
+	height: 100%;
+}
+
+.avatar:before {
+	content: "Nianyi Wang's Homepage";
+	
+	color: white;
+	font-weight: bold;
+}
+
+#burger + label {
+	display: block;
+	
+	position: absolute;
+	
+	right: 0;
+	width: 128px;
+	height: 100%;
+}
+
+#burger + label:after {
+	content: "";
+	
+	display: block;
+	
+	position: absolute;
+	
+	left: 25%;
+	top: 50%;
+	margin-top: -2pt;
+	height: 4pt;
+	width: 50%;
+	
+	box-shadow:
+			0 -16pt white,
+			0 16pt white;
+	
+	background-color: white;
+}
+
+article { height: calc(100% - 4rem - 192px); }

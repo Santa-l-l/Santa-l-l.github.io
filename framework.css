@@ -1,0 +1,43 @@
+@import url("framework-landscape.css") only screen and (orientation: landscape);
+@import url("framework-portrait.css") only screen and (orientation: portrait);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	
+	font-family: "Heiti SC",
+	"思源黑体 CN",
+	"Hiragino Sans GB",
+	sans-serif;
+}
+
+body {
+	position: relative;
+	
+	height: 100%;
+}
+
+aside a, .title a {
+	text-decoration: none;
+	color: inherit;
+}
+
+article {
+	flex: 1;
+	
+	display: flex;
+	
+	flex-direction: column;
+	align-items: stretch;
+	
+	padding: 2rem 2rem;
+	
+	overflow-y: auto;
+	
+	background-color: white;
+}
